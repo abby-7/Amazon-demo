@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  /* position: absolute; */
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  /* justify-content: space-between; */
+  align-items: center;
+  color: white;
+}
+
+/* .address-area {
+  padding: 0 9px 0 9px;
+  margin: 5px 2px 5px 0;
+} */
+
+.address-icon {
+  width: 30px;
+  height: 30px;
+  margin-top: 8px;
+}
+
+.select-address {
+  padding: 7px;
+  margin-left: 3px;
+  margin-right: 3px;
+  cursor: pointer;
+  border: 1px solid;
+  border-color: black;
+  border-radius: 2px;
+}
+
+.select-address:hover {
+  border-color: white;
+}
+
+.small-text {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.large-text {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.search-box {
+  padding: 10px 4px 10px 3px;
+  height: 60px;
+}
