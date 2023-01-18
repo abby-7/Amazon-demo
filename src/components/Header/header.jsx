@@ -1,4 +1,6 @@
+
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./header.css";
 
 export default function Header() {
@@ -13,6 +15,7 @@ export default function Header() {
         style={{ width: "130px", position: "relative" }}
       />
 
+      {/* box会超出高度 */}
       <img
         className="address-icon"
         src={require("./asset/Address_Icon.png")}
@@ -25,41 +28,69 @@ export default function Header() {
 
       <div className="search-box">
         {/* <form> */}
-        <select>
+        <select className="search-left">
           <option>All</option>
           <option>Alexa</option>
           <option>Amazon Devices</option>
           <option>Amazon Fresh</option>
           <option>Amazon Pharmacy</option>
         </select>
-        <input type="text"></input>
-        <button>?</button>
+        <input className="search-input" type="text"></input>
+        <button className="search-right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+          </svg>
+        </button>
         {/* </form> 不确定是否form*/}
       </div>
 
       <span className="select-language">
-        <span>EN</span>
+        <img
+          className="flag-icon"
+          src={require("./asset/USflag_Icon.png")}
+          alt="flag"
+        />
+        <select className="options">
+          <option>EN</option>
+          <option>ES</option>
+        </select>
       </span>
 
-      <div className="sign-in-area-1">
-        <div style={{ textAlign: "left" }}>Hello, sign in</div>
-        <div>Account & Lists</div>
+      <Link to="/signin" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+
+
+      <div className="sign-in-area-1" >
+        <div className="small-text" style={{ textAlign: "left" }}>
+          Hello, sign in
+        </div>
+        <div className="large-text">Account & Lists</div>
       </div>
+
+      </Link>
+
+
 
       <div className="return-orders">
-        <div style={{ textAlign: "left" }}>Returns</div>
-        <div>& Orders</div>
+        <div className="small-text">Returns</div>
+        <div className="large-text">& Orders</div>
       </div>
 
+      {/* 购物车 cart icon */}
       <span className="cart">
         <img
           src={require("./asset/Cart_Icon.png")}
           alt="cart icon"
-          width="50%rem"
+          className="cart-icon"
         />
-        <span>0</span>
-        <span>Cart</span>
+        <span className="item-amount">0</span>
       </span>
+      <span className="cart-text">Cart</span>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './loginCSS.css';
 import LoginFooter from './loginFooter';
+import { Link } from "react-router-dom";
 
 function CreateAccount() {
   const [name,setName]=useState()
@@ -73,7 +74,9 @@ function CreateAccount() {
 
   return (
     <>
-    <img src='https://i.hd-r.cn/4ac9e815209fb977cee53d6fae5f9cb8.png' alt='img' className='login-logo'></img>
+    <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+       <img src='https://i.hd-r.cn/4ac9e815209fb977cee53d6fae5f9cb8.png' alt='img' className='login-logo'></img>
+    </Link>
 
       <div className='signin-page-container'>
   
@@ -118,7 +121,7 @@ function CreateAccount() {
 
       <div className='text1'>
         
-            Already have an account? Sign in <br/>
+            Already have an account?  <Link to="/signin" >Sign in</Link> <br/>
             <br/>
             Buying for work? Create a free business account
 

@@ -1,19 +1,49 @@
 import { useState } from 'react';
 import LoginFooter from './loginFooter';
 import './loginCSS.css';
+import { Link } from "react-router-dom";
+import USER_DATA from './constants';
 
 function SignInPage() {
+    const [inputEmail,setInputEmail]=useState()
+    const [errorInfo,setErrorInfo]=useState(false)
+    const [notfoundError,setNotfoundError]=useState(false)
+
+    const handleContinue=()=>{
+        setNotfoundError(false)
+        setErrorInfo(false)
+        if(!inputEmail){
+            setErrorInfo(true)
+        } else {
+            let temp=[...USER_DATA]
+            let index=temp.findIndex((item)=>item.mobilEmail===inputEmail)
+            if(index===-1){
+                setNotfoundError(true)
+            }
+
+            console.log(index)
+        }
+
+
+    }
+
+
 
     return (<> 
+    <Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'}}>
      <img src='https://i.hd-r.cn/4ac9e815209fb977cee53d6fae5f9cb8.png' alt='img' className='login-logo'></img>
+     </Link>
+
      <div className='signin-page-container'>
 
         <h1>Sign in</h1>
         <br/>
         <h2>Email or mobile phone number</h2>
-            <input type='text' className='signin-input'></input>
+            <input type='text' className='signin-input' onChange={(e)=>{setInputEmail(e.target.value)}}></input>
+            {errorInfo?<div className='error-alter'>! Enter your email or mobile phone number</div>:null}
+            {notfoundError?<div className='error-alter'>! We cannot find an account with that email address</div>:null}
 
-            <button className='continue-btn'>Continue</button>
+            <button className='continue-btn' onClick={handleContinue}>Continue</button>
             <br/>
             <div className='text1'>
                 By continuing, you agree to Amazon's 
@@ -29,7 +59,9 @@ function SignInPage() {
     <div class="strike">
          <span className='gray-small'>New To Amazon?</span>
     </div>
+    <Link to="/createaccount" style={{ color: 'inherit', textDecoration: 'inherit'}}>
         <button className='create-account-btn'>Create your Amazon account</button>
+    </Link>
 
     </div>
 

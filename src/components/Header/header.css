@@ -4,9 +4,10 @@
   width: 100%;
   height: 60px;
   background-color: black;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   align-items: center;
   color: white;
+  /* overflow: auto; */
 }
 
 /* .address-area {
@@ -21,13 +22,13 @@
 }
 
 .select-address {
-  padding: 7px;
-  margin-left: 3px;
+  padding: 5px;
   margin-right: 3px;
   cursor: pointer;
   border: 1px solid;
   border-color: black;
   border-radius: 2px;
+  height: 50px;
 }
 
 .select-address:hover {
@@ -43,9 +44,102 @@
 .large-text {
   font-size: 14px;
   font-weight: 700;
+  text-align: left;
 }
 
 .search-box {
   padding: 10px 4px 10px 3px;
   height: 60px;
+  width: auto;
+  margin: 0px 10 0px 10;
+  display: flex;
+  align-items: center;
+}
+
+.search-left {
+  height: 40px;
+  width: 50px;
+  border-radius: 4px 0px 0px 4px;
+  padding: 0px 4px 0 3px;
+  /* margin-top: 10px; */
+  color: #0f1111;
+  font-size: 14px;
+  background-color: white;
+}
+
+.search-input {
+  height: 40px;
+  width: 45vw;
+  padding: 10px 4px 0 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.search-right {
+  height: 41.6px;
+  width: 45px;
+  padding: 0px 4px 0px 3px;
+  border-radius: 0px 4px 4px 0px;
+  background-color: orange;
+}
+
+.search-button {
+  width: 10px;
+  height: 10px;
+}
+
+.select-language {
+  padding: 5px 9px 5px 9px;
+  font-size: 14px;
+  font-weight: 700;
+  width: auto;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.flag-icon {
+  height: 40px;
+  width: 24px;
+  margin-bottom: 0px;
+}
+
+.options {
+  background-color: black;
+  color: white;
+  border-color: #0f1111;
+}
+
+.sign-in-area-1 {
+  margin-left: 5px;
+}
+
+.return-orders {
+  margin-left: 20px;
+}
+
+.cart {
+  padding: 0 9px 11px 10px;
+}
+
+.cart-icon {
+  z-index: 1;
+  width: 75px;
+  margin-top: 10px;
+}
+
+.item-amount {
+  color: orange;
+  z-index: 2;
+  font-weight: 700;
+  line-height: 16px;
+  font-size: 16px;
+  margin-left: -40px;
+}
+
+.cart-text {
+  margin-right: 10px;
+  margin-top: 20px;
+  font-weight: 700;
+  line-height: 16px;
 }
