@@ -1,18 +1,19 @@
-import logo from "./logo.svg";
-import "./App.css";
-import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import logo from "./logo.svg"
+import "./App.css"
+import React, { useState } from "react"
+import "bootstrap/dist/css/bootstrap.min.css"
+import Header from "./components/Header/header"
+import Navbar from "./components/Navbar/navbar"
 
-import Header from "./components/Header/header";
-
-function App() {
-  const [list, setList] = useState([]);
+function App () {
+  const [list, setList] = useState([])
   return (
     <div className="App">
       <Header />
+      <Navbar />
       <span> 123</span>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
