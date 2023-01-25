@@ -43,7 +43,10 @@ function SignInPage() {
             {errorInfo?<div className='error-alter'>! Enter your email or mobile phone number</div>:null}
             {notfoundError?<div className='error-alter'>! We cannot find an account with that email address</div>:null}
 
-            <button className='continue-btn' onClick={handleContinue}>Continue</button>
+            <Link to="/signin/password" style={{ color: 'inherit', textDecoration: 'inherit'}}>            
+                <button className='continue-btn' onClick={handleContinue}>Continue</button>
+            </Link>
+            
             <br/>
             <div className='text1'>
                 By continuing, you agree to Amazon's 

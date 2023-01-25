@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 import './itemBox.css'
 
 function ItemBox1(){
@@ -89,11 +90,18 @@ function ItemBox1(){
                    
             </div>
             <div className='small-grid'>
-            <h2 className="box-title">Sign in for the best experience</h2>
+            <h2 className="box-title margin-20">Sign in for the best experience</h2>
+
+            <Link to="/signin" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+                 <button className='sign-btn margin-20'>Sign in securely</button>
+            </Link>
             
 
             </div>
-            <div className='small-grid'></div>
+            <div className='small-grid' id='no-background-color'>
+                <img src='https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/5b05d703-5bf3-4e1c-a21f-f5c921e044d1.jpg' alt="img"></img>
+
+            </div>
 
 
 
