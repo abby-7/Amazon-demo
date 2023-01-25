@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./header.css";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [a, setA] = useState(1);
@@ -60,12 +61,16 @@ export default function Header() {
         </select>
       </span>
 
+      <Link to="/signin" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+
       <div className="sign-in-area-1">
         <div className="small-text" style={{ textAlign: "left" }}>
           Hello, sign in
         </div>
         <div className="large-text">Account & Lists</div>
       </div>
+
+      </Link>
 
       <div className="return-orders">
         <div className="small-text">Returns</div>
