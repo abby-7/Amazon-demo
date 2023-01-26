@@ -1,0 +1,53 @@
+.border-white {
+  border: 1px white transparent;
+  padding: 1px;
+}
+
+.border-white:hover {
+  border: 1px white solid;
+}
+
+.nav-main {
+  height: 40px;
+  background-color: #232f3e;
+  margin: 0;
+}
+
+.container-nav {
+  font-family: 'Amazon Ember', Arial, sans-serif;
+  font-size: 12px;
+  padding: 8px 0 8px 15px;
+  font-weight: bold;
+}
+
+.container-nav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 1.2em;
+  color: white;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.container-nav ul li {
+  padding: 0 8px;
+}
+
+.container-nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hamburger-menu-icon {
+  width: 20px;
+  height: 15px;
+}
+
+.hamburger-menu-icon .bar1,
+.hamburger-menu-icon .bar2,
+.hamburger-menu-icon .bar3 {
+  fill: white;
+}

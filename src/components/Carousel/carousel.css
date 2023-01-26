@@ -1,0 +1,42 @@
+.image-container {
+  position: relative;
+}
+
+.image-list {
+  display: flex;
+}
+
+.image-item {
+  min-width: 100%;
+  height: 600px;
+  /* transform: translateX(-100%); */
+  transition: transform 0.3s;
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-btn-container {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.slider-btn {
+  border: 1.5px solid transparent;
+  padding: 100px 20px;
+  font-size: 40px;
+  background-color: transparent;
+  border-radius: 3%;
+}
+
+.slider-btn:focus {
+  border: 1.5px solid seagreen;
+  box-shadow: -2px -2px white, 2px 2px white;
+  margin: 2px;
+}
