@@ -1,23 +1,23 @@
-import React, { useState } from 'react'
-import './header.css'
-import { Link } from 'react-router-dom'
+import React, { useState } from "react";
+import "./header.css";
+import { Link } from "react-router-dom";
 
 export default function Header() {
-  const [a, setA] = useState(1)
-  const [adress, setAdress] = useState('hillsboro')
+  const [a, setA] = useState(1);
+  const [adress, setAdress] = useState("hillsboro");
 
   return (
     <div className="header">
       <img
-        src={require('./asset/Amazon_Logo.png')}
+        src={require("./asset/Amazon_Logo.png")}
         alt="Amazon Logo"
-        style={{ width: '130px', position: 'relative' }}
+        style={{ width: "130px", position: "relative", padding: "8px" }}
       />
 
       {/* box会超出高度 */}
       <img
         className="address-icon"
-        src={require('./asset/Address_Icon.png')}
+        src={require("./asset/Address_Icon.png")}
         alt="address icon"
       />
       <div className="select-address">
@@ -41,7 +41,8 @@ export default function Header() {
             width="22"
             height="22"
             fill="currentColor"
-            viewBox="0 0 16 16">
+            viewBox="0 0 16 16"
+          >
             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
           </svg>
         </button>
@@ -51,7 +52,7 @@ export default function Header() {
       <span className="select-language">
         <img
           className="flag-icon"
-          src={require('./asset/USflag_Icon.png')}
+          src={require("./asset/USflag_Icon.png")}
           alt="flag"
         />
         <select className="options">
@@ -62,9 +63,10 @@ export default function Header() {
 
       <Link
         to="/signin"
-        style={{ color: 'inherit', textDecoration: 'inherit' }}>
+        style={{ color: "inherit", textDecoration: "inherit" }}
+      >
         <div className="sign-in-area-1">
-          <div className="small-text" style={{ textAlign: 'left' }}>
+          <div className="small-text" style={{ textAlign: "left" }}>
             Hello, sign in
           </div>
           <div className="large-text">Account & Lists</div>
@@ -79,7 +81,7 @@ export default function Header() {
       {/* 购物车 cart icon */}
       <span className="cart">
         <img
-          src={require('./asset/Cart_Icon.png')}
+          src={require("./asset/Cart_Icon.png")}
           alt="cart icon"
           className="cart-icon"
         />
@@ -87,5 +89,5 @@ export default function Header() {
       </span>
       <span className="cart-text">Cart</span>
     </div>
-  )
+  );
 }

@@ -29,6 +29,9 @@
   border-color: black;
   border-radius: 2px;
   height: 50px;
+  /* width: 150px; */
+  white-space: nowrap;
+  /* 让文字不换行 */
 }
 
 .select-address:hover {
@@ -50,7 +53,8 @@
 .search-box {
   padding: 10px 4px 10px 3px;
   height: 60px;
-  width: 650px;
+  /* width: 50vw; */
+  width: auto;
   margin: 0px 10 0px 10;
   display: flex;
   align-items: center;
@@ -70,6 +74,7 @@
 .search-input {
   height: 40px;
   width: 45vw;
+  /* width:auto;不能用这个 */
   padding: 10px 4px 0 3px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -112,10 +117,12 @@
 
 .sign-in-area-1 {
   margin-left: 5px;
+  white-space: nowrap;
 }
 
 .return-orders {
   margin-left: 20px;
+  white-space: nowrap;
 }
 
 .cart {
