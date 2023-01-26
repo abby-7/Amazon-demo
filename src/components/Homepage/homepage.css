@@ -1,3 +1,8 @@
 body {
-    background-color: rgb(233, 230, 230)
-  }
+  background-color: rgb(233, 230, 230);
+}
+
+.main {
+  position: relative;
+  top: -355px;
+}
