@@ -1,0 +1,29 @@
+.terms {
+  padding: 10px 0 30px;
+  text-align: center;
+  box-sizing: border-box;
+  color: #ddd;
+}
+
+.term-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ddd;
+}
+
+li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 20px 0 5px;
+}
