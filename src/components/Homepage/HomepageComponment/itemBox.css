@@ -15,6 +15,22 @@
   margin-right: 10px;
 }
 
+.carousel-large-box{
+    height: 230px;
+    width: 100%;
+    background-color: white;
+
+}
+
+.carousel-small-box{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  background-color: white
+}
+
 .small-img-box {
   width: 100%;
   height: 80%;
