@@ -89,7 +89,7 @@ function ItemBox1(){
                 
                    
             </div>
-            <div className='small-grid'>
+            <div className='small-grid bg-white'>
             <h2 className="box-title margin-20">Sign in for the best experience</h2>
 
             <Link to="/signin" style={{ color: 'inherit', textDecoration: 'inherit'}}>
@@ -98,7 +98,7 @@ function ItemBox1(){
             
 
             </div>
-            <div className='small-grid' id='no-background-color'>
+            <div className='small-grid' style={{backgroundColor:"none"}}>
                 <img src='https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/5b05d703-5bf3-4e1c-a21f-f5c921e044d1.jpg' alt="img"></img>
 
             </div>

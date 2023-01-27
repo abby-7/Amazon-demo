@@ -38,6 +38,10 @@
   overflow:hide;
 }
 
+.bg-white{
+    background-color: white;
+}
+
 .text-left {
     text-align: left;
     margin-left: 25px;
@@ -69,11 +73,6 @@
     overflow: hidden;
     position: relative;
     width: 100%;
-}
-
-.small-grid{
-    background-color: white;
-
 }
 
 #no-background-color{
