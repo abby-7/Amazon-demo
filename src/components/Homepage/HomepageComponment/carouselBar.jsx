@@ -6,7 +6,7 @@ import imgList from './imgList';
 
 function CarouselBar(){
   const [list, setList] = useState([]);
-  const [showIndex,setShowIndex]=useState(5);
+  const [showIndex,setShowIndex]=useState(0);
 
   const handlePre=()=>{
     if(showIndex===0){
@@ -35,7 +35,10 @@ function CarouselBar(){
       }
   }
 
-    return(<div className='warap'>
+    return(
+      <>
+    
+    <div className='warap'>
         <div className='carousel-large-box'>
             <div className="text-left">
                     <h2 className="box-title">Best Sellers in Kitchen & Dining</h2>
@@ -52,17 +55,27 @@ function CarouselBar(){
 
             </div>
 
-
-        </div>
-
         <div>
             <button onClick={()=>{handlePre()}}>←</button>
             <button onClick={()=>{handleNext()}}>→</button>
         </div>
         
+        </div>
 
+       
+
+
+    </div>
+
+
+        <div className="ad-box">
+          <img className="img-test" alt="img" src="https://m.media-amazon.com/images/G/01/GiftCards/Consumer/multi-product/House/2022_fallback_HouseAds_1940x500_EN.jpg"></img>
+        
+
+
+    </div>
     
-    </div>)
+    </>)
 
 }
 

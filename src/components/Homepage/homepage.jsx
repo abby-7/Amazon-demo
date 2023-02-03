@@ -8,6 +8,7 @@ import ItemBox2 from "./HomepageComponment/itemBox2";
 import Carousel from "../Carousel/carousel";
 import Footer from "../Footer/footer";
 import CarouselBar from "./HomepageComponment/carouselBar";
+import Redbox from "./HomepageComponment/redbox";
 
 function HomePage() {
   return (
@@ -20,6 +21,7 @@ function HomePage() {
         <ItemBox1 />
         <ItemBox2 />
         <CarouselBar />
+        <Redbox />
       </div>
      
       <Footer />
