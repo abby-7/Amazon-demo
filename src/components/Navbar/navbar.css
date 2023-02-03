@@ -14,7 +14,7 @@
 }
 
 .container-nav {
-  font-family: 'Amazon Ember', Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 12px;
   padding: 8px 0 8px 15px;
   font-weight: bold;
@@ -51,3 +51,57 @@
 .hamburger-menu-icon .bar3 {
   fill: white;
 }
+
+/* css for sidebar */
+
+.sidebar-header {
+  background-color: #232f3e;
+  color: white;
+  height: 50px;
+  line-height: 20px;
+}
+
+.sidebar-header span {
+  font-size: 19px;
+}
+
+.profile-icon {
+  margin-left: 36px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.sidebar-container span {
+  font-size: 19px;
+}
+
+.sidebar-title {
+  color: #111;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 13px 20px 5px 36px;
+}
+
+.sidebar-content {
+  font-size: 14px;
+  padding: 7px 0px 7px 36px;
+  color: #111;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar-content:hover {
+  background-color: lightgray;
+}
+
+.line {
+  border-bottom: 1px solid #d5dbdb;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.arrow-right {
+  padding-right: 10px;
+}
+
+/* end if css for sidebar */
