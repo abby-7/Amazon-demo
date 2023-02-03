@@ -1,4 +1,4 @@
-import "./footerNav.css";
+import './footerNav.css'
 
 export default function FooterNav() {
   return (
@@ -10,11 +10,10 @@ export default function FooterNav() {
             <td className="footer-item-box">
               <a
                 href="https://music.amazon.com?ref=dm_aff_amz_com"
-                className="footer-item"
-              >
+                className="footer-item">
                 Amazon Music
                 <br />
-                <span style={{ color: "#999" }}>
+                <span style={{ color: '#999' }}>
                   Stream millions
                   <br />
                   of songs
@@ -24,12 +23,11 @@ export default function FooterNav() {
             <td className="footer-item-box">
               <a
                 href="https://advertising.amazon.com/?ref=footer_advtsing_amzn_com"
-                className="footer-item"
-              >
+                className="footer-item">
                 Amazon <br />
                 Advertizing
                 <br />
-                <span style={{ color: "#999" }}>
+                <span style={{ color: '#999' }}>
                   Find, attract, and
                   <br />
                   engage <br />
@@ -40,11 +38,10 @@ export default function FooterNav() {
             <td className="footer-item-box">
               <a
                 href="https://www.amazon.com/gp/browse.html?node=15547130011&ref_=_us_footer_drive"
-                className="footer-item"
-              >
+                className="footer-item">
                 Amazon Drive
                 <br />
-                <span style={{ color: "#999" }}>
+                <span style={{ color: '#999' }}>
                   Cloud storage
                   <br />
                   from Amazon
@@ -55,7 +52,7 @@ export default function FooterNav() {
               <a href="https://www.6pm.com/" className="footer-item">
                 6pm
                 <br />
-                <span style={{ color: "#999" }}>
+                <span style={{ color: '#999' }}>
                   Score deals
                   <br />
                   on fashion
@@ -67,7 +64,7 @@ export default function FooterNav() {
               <a href="https://www.abebooks.com/" className="footer-item">
                 AbeBooks
                 <br />
-                <span style={{ color: "#999" }}>
+                <span style={{ color: '#999' }}>
                   Books, art
                   <br />& collectibles
                 </span>
@@ -77,7 +74,7 @@ export default function FooterNav() {
               <a href="https://www.acx.com/" className="footer-item">
                 ACX
                 <br />
-                <span style={{ color: "#999" }}>
+                <span style={{ color: '#999' }}>
                   Audiobook
                   <br /> Publishing
                   <br />
@@ -88,11 +85,10 @@ export default function FooterNav() {
             <td className="footer-item-box">
               <a
                 href="https://sell.amazon.com/?ld=AZUSSOA-footer-aff&ref_=footer_sell"
-                className="footer-item"
-              >
+                className="footer-item">
                 Sell on Amazon
                 <br />
-                <span style={{ color: "#999" }}>Start a Selling Account</span>
+                <span style={{ color: '#999' }}>Start a Selling Account</span>
               </a>
             </td>
           </tr>
@@ -101,11 +97,10 @@ export default function FooterNav() {
             <td className="footer-item-box">
               <a
                 href="https://www.amazon.com/business?ref_=footer_retail_b2b"
-                className="footer-item"
-              >
+                className="footer-item">
                 Amazon Business
                 <br />
-                <span style={{ color: "#999" }}>
+                <span style={{ color: '#999' }}>
                   Everything For
                   <br />
                   Your Business
@@ -115,11 +110,10 @@ export default function FooterNav() {
             <td className="footer-item-box">
               <a
                 href="https://www.amazon.com/alm/storefront?almBrandId=QW1hem9uIEZyZXNo&ref_=footer_aff_fresh"
-                className="footer-item"
-              >
+                className="footer-item">
                 Amazon Fresh
                 <br />
-                <span style={{ color: "#999" }}>
+                <span style={{ color: '#999' }}>
                   Groceries & More
                   <br />
                   Right To Your <br />
@@ -130,11 +124,10 @@ export default function FooterNav() {
             <td className="footer-item-box">
               <a
                 href="https://www.amazon.com/gp/browse.html?node=230659011&ref_=footer_amazonglobal"
-                className="footer-item"
-              >
+                className="footer-item">
                 AmazonGlobal
                 <br />
-                <span style={{ color: "#999" }}>
+                <span style={{ color: '#999' }}>
                   Ship Orders
                   <br />
                   Internationally
@@ -144,11 +137,10 @@ export default function FooterNav() {
             <td className="footer-item-box">
               <a
                 href="https://www.amazon.com/services?ref_=footer_services"
-                className="footer-item"
-              >
+                className="footer-item">
                 Home Services
                 <br />
-                <span style={{ color: "#999" }}>
+                <span style={{ color: '#999' }}>
                   Experienced
                   <br /> Pros Happiness
                   <br /> Guarantee
@@ -158,12 +150,11 @@ export default function FooterNav() {
             <td className="footer-item-box">
               <a
                 href="https://ignite.amazon.com/?ref=amazon_footer_ignite"
-                className="footer-item"
-              >
+                className="footer-item">
                 Amazon
                 <br /> Ignite
                 <br />
-                <span style={{ color: "#999" }}>
+                <span style={{ color: '#999' }}>
                   Sell your
                   <br /> original
                   <br />
@@ -177,12 +168,11 @@ export default function FooterNav() {
             <td className="footer-item-box">
               <a
                 href="https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=amazonfooter"
-                className="footer-item"
-              >
+                className="footer-item">
                 Amazon Web <br />
                 Services
                 <br />
-                <span style={{ color: "#999" }}>
+                <span style={{ color: '#999' }}>
                   Scalable Cloud
                   <br />
                   Computing <br />
@@ -194,7 +184,7 @@ export default function FooterNav() {
               <a href="https://www.audible.com" className="footer-item">
                 Audible
                 <br />
-                <span style={{ color: "#999" }}>
+                <span style={{ color: '#999' }}>
                   Listen to Books & <br />
                   Original
                   <br />
@@ -210,7 +200,7 @@ export default function FooterNav() {
               <a href="https://www.pillpack.com/" className="footer-item">
                 PillPack
                 <br />
-                <span style={{ color: "#999" }}>
+                <span style={{ color: '#999' }}>
                   Pharmacy <br />
                   Simplified
                 </span>
@@ -219,12 +209,11 @@ export default function FooterNav() {
             <td className="footer-item-box">
               <a
                 href="https://www.amazon.com/gp/browse.html?node=12653393011&ref_=footer_usrenew"
-                className="footer-item"
-              >
+                className="footer-item">
                 Amazon <br />
                 Renewed
                 <br />
-                <span style={{ color: "#999" }}>
+                <span style={{ color: '#999' }}>
                   Like-new <br />
                   products <br />
                   you can trust
@@ -235,5 +224,5 @@ export default function FooterNav() {
         </tbody>
       </table>
     </div>
-  );
+  )
 }
