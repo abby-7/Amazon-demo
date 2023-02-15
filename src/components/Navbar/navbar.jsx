@@ -3,6 +3,9 @@ import "./navbar.css";
 import { useState } from "react";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import SideBar from "./SideBar/sideBar";
+import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+
+import BestSellers from "../BestSeller/bestSellers";
 
 export default function Navbar() {
   const [displaySideBar, setDisplaySideBar] = useState(false);
@@ -356,47 +359,53 @@ export default function Navbar() {
           </div>
 
           <li className="border-white">
-            <a href="#">Clinic</a>
+            <span>Clinic</span>
           </li>
           <li className="border-white">
-            <a href="#">Customer Service</a>
+            <span>Customer Service</span>
           </li>
           <li className="border-white">
-            <a href="#">Best Sellers</a>
+            <Link to="/bestsellers">
+              <span>Best Sellers</span>
+            </Link>
           </li>
           <li className="border-white">
-            <a href="#">Amazon Basics</a>
+            <span>Amazon Basics</span>
           </li>
           <li className="border-white">
-            <a href="#">Today's Deal</a>
+            <span>Today's Deal</span>
           </li>
           <li className="border-white">
-            <a href="#">Prime</a>
+            <span>Prime</span>
           </li>
           <li className="border-white">
-            <a href="#">New Releases</a>
+            <span>New Releases</span>
           </li>
           <li className="border-white">
-            <a href="#">Music</a>
+            <span>Music</span>
           </li>
           <li className="border-white">
-            <a href="#">Books</a>
+            <span>Books</span>
           </li>
           <li className="border-white">
-            <a href="#">Registry</a>
+            <span>Registry</span>
           </li>
           <li className="border-white">
-            <a href="#">Gift Cards</a>
+            <span>Gift Cards</span>
           </li>
           <li className="border-white">
-            <a href="#">Fashion</a>
+            <span>Fashion</span>
           </li>
           <li className="border-white">
-            <a href="#">Amazon Home</a>
+            <span>Amazon Home</span>
           </li>
           <li className="border-white">
-            <a href="#">Toys & Games</a>
+            <span>Toys & Games</span>
           </li>
+
+          {/* <Routes>
+            <Route path="/bestsellers" element={<BestSellers />} />
+          </Routes> */}
         </ul>
       </div>
     </div>
